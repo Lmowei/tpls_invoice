@@ -1,0 +1,144 @@
+<!--
+ * @Description: file content
+ * @Author: JasonYang
+ * @Date: 2019-08-27 11:14:36
+ * @LastEditTime : 2020-01-06 17:22:46
+ -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+
+<body>
+    <form class="layui-form ch-layout" method="post" id="docForm">
+
+        <!--必要提交-->
+        <input type="hidden" value="" id="id" name="id">
+        <input type="hidden" value="" id="moduleId" name="moduleId">
+        <input type="hidden" value="" id="docName" name="docName">
+
+        <!--布局-->
+        <div class="ch-layout">
+            <!-- 信头 -->
+            <div class="letter-head">
+                <p>Testshop Team</p>
+                <p>401-22, 4/F, Longhe Building No.1961, Jianghui Road</p>
+                <p>HangZhou ZheJiang 310052 China</p>
+            </div>
+            <!-- 收件地址 -->       
+            <div class="receiving-address">
+                <textarea name="" id="" placeholder="请输入收件公司">阳江市飞轮金属制品有限公司</textarea>
+                <input type="text" placeholder="请输入收件人姓名" value="王海怡">
+                <textarea name="" id="" placeholder="请输入收件人地址">江城区岭东工业区赤岗东路1号 阳江 广东</textarea>
+            </div>
+            <div class="invoice-logo">
+                <img src="../img/logo.png">
+                <p>Testing | Certification | Consultation</p>
+            </div>
+            <!-- 概要 -->
+            <div class="resume">
+                <table>
+                    <tr>
+                        <td>Invoice #:</td>
+                        <td>2801912119</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>December 25, 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Balance Due (CNY):</td>
+                        <td>¥900.00</td>
+                    </tr>
+                    <tr>
+                        <td>PO #:</td>
+                        <td>WK</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 内容 -->
+            <div class="invoice-content">
+                <table>
+                    <tr>
+                        <td width="80">Item</td>
+                        <td width="300">Description</td>
+                        <td width="80">Unit Cost (¥)</td>
+                        <td width="40">Quantity</td>
+                        <td>Price (¥)</td>
+                    </tr>
+                    <!--edtion-->
+                    <tr>
+                        <td valign="top" class="item"><input type="text" value="PAHs 18项"></td>
+                        <td valign="top" class="description"><textarea name="" id="" placeholder="请输入内容">80mm solid rubber wheel s  测试型号:Art.710142C</textarea></td valign="top">    
+                        <td valign="top" class="unit-cost"><input type="text" value="450.00"></td valign="top">
+                        <td valign="top" class="quantity"><input type="text" value="1"></td valign="top">
+                        <td valign="top" class="price"><span>450.00</span></td valign="top">
+                    </tr>
+                    <tr>
+                        <td valign="top" class="item"><input type="text" value="PAHs 18项"></td>
+                        <td valign="top" class="description"><textarea name="" id="" placeholder="请输入内容">80mm solid rubber wheel s  测试型号:Art.710142C</textarea></td valign="top">    
+                        <td valign="top" class="unit-cost"><input type="text" value="450.00"></td valign="top">
+                        <td valign="top" class="quantity"><input type="text" value="1"></td valign="top">
+                        <td valign="top" class="price"><span>450.00</span></td valign="top">
+                    </tr>
+                    <tr>
+                        <td valign="top" class="item"><input type="text" value="PAHs 18项"></td>
+                        <td valign="top" class="description"><textarea name="" id="" placeholder="请输入内容">80mm solid rubber wheel s  测试型号:Art.710142C</textarea></td valign="top">    
+                        <td valign="top" class="unit-cost"><input type="text" value="450.00"></td valign="top">
+                        <td valign="top" class="quantity"><input type="text" value="1"></td valign="top">
+                        <td valign="top" class="price"><span>450.00</span></td valign="top">
+                    </tr>
+                    <!--end edtion-->
+                    <tr>
+                        <td colspan="5" class="notes">
+                            <p>NOTES: </p>
+                            <textarea name="" id="">TIC-WDX19120683EN TIC-WDX19120684EN TIC-WDX19120684EN</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="empty">
+                            <table>
+                                <tr>
+                                    <td>Subtotal:</td>
+                                    <td>900.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total:</td>
+                                    <td>900.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Amount Paid:</td>
+                                    <td>0.00</td>
+                                </tr>  
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr> 
+                                <tr>
+                                    <td>Balance Due (CNY):</td>
+                                    <td>¥900.00</td>
+                                </tr>
+                            </table>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <textarea name="" id="" placeholder="请输入内容" class="payment"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <!--提交按钮-->
+
+    </form>
+
+</body>
+
+</html>

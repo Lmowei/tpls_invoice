@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        // module配置很重要，千万不能配置成commonjs，热加载会失效
+        "module": "ES2015",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "target": "ES5",
+        "strictNullChecks": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false
+    },
+    "include": [
+        "./src/**/*",
+    ]
+}
